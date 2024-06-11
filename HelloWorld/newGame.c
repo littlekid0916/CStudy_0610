@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main() {
+int main1() {
     int min = 1; // 범위 최소값
     int max = 100; // 범위 최대값
     int target; // 맞추어야 할 숫자

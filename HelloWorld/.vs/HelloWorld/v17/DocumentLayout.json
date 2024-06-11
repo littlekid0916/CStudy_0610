@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\source\\repos\\HelloWorld\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B2AA957-0BB8-4342-8C02-088373DCC61B}|HelloWorld.vcxproj|C:\\Users\\Administrator\\source\\repos\\HelloWorld\\newGame.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2B2AA957-0BB8-4342-8C02-088373DCC61B}|HelloWorld.vcxproj|solutionrelative:newGame.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2B2AA957-0BB8-4342-8C02-088373DCC61B}|HelloWorld.vcxproj|C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\\uCEF4\uD30C\uC77C\uB7EC.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2B2AA957-0BB8-4342-8C02-088373DCC61B}|HelloWorld.vcxproj|solutionrelative:\uCEF4\uD30C\uC77C\uB7EC.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B2AA957-0BB8-4342-8C02-088373DCC61B}|HelloWorld.vcxproj|C:\\Users\\Administrator\\source\\repos\\HelloWorld\\hello.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{2B2AA957-0BB8-4342-8C02-088373DCC61B}|HelloWorld.vcxproj|C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\hello.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2B2AA957-0BB8-4342-8C02-088373DCC61B}|HelloWorld.vcxproj|solutionrelative:hello.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B2AA957-0BB8-4342-8C02-088373DCC61B}|HelloWorld.vcxproj|C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\newGame.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2B2AA957-0BB8-4342-8C02-088373DCC61B}|HelloWorld.vcxproj|solutionrelative:newGame.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,27 +55,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "newGame.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\HelloWorld\\newGame.c",
-              "RelativeDocumentMoniker": "newGame.c",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\HelloWorld\\newGame.c",
-              "RelativeToolTip": "newGame.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAiAAAA",
+              "Title": "\uCEF4\uD30C\uC77C\uB7EC.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\\uCEF4\uD30C\uC77C\uB7EC.c",
+              "RelativeDocumentMoniker": "\uCEF4\uD30C\uC77C\uB7EC.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\\uCEF4\uD30C\uC77C\uB7EC.c",
+              "RelativeToolTip": "\uCEF4\uD30C\uC77C\uB7EC.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-06-10T08:36:19.007Z",
+              "WhenOpened": "2024-06-11T07:45:51.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "newGame.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\newGame.c",
+              "RelativeDocumentMoniker": "newGame.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\newGame.c",
+              "RelativeToolTip": "newGame.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-06-11T07:13:53.595Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "hello.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\HelloWorld\\hello.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\hello.c",
               "RelativeDocumentMoniker": "hello.c",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\HelloWorld\\hello.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\hello.c",
               "RelativeToolTip": "hello.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-06-10T08:31:42.502Z",
+              "WhenOpened": "2024-06-11T08:09:38.138Z",
               "EditorCaption": ""
             }
           ]
