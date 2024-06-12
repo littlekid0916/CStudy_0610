@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int Main(void) {
+int main1(void) {
 
     printf("Hello, Study!\n안녕히가세요");
     printf("안녕히가세요");
