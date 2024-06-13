@@ -36,6 +36,13 @@ int main(void) {
 
 	// 문제3. 2개의 정수를 입력 받아서 몫과 나머지를 출력
 	printf("문제3\n");
+	int a, b;
+	printf("첫번째 정수를 입력해주세요 : ");
+	scanf_s("%d", &a);
+	printf("두번째 정수를 입력해주세요 : ");
+	scanf_s("%d", &b);
+	printf("몫 : %d\n", a / b);
+	printf("나머지 : %d\n", a % b);
 
 	return 0;
 }

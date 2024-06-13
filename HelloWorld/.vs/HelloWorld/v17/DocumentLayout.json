@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B2AA957-0BB8-4342-8C02-088373DCC61B}|HelloWorld.vcxproj|C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\4\uAC15_\uC774\uC2A4\uCF00\uC774\uD504.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2B2AA957-0BB8-4342-8C02-088373DCC61B}|HelloWorld.vcxproj|solutionrelative:4\uAC15_\uC774\uC2A4\uCF00\uC774\uD504.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2B2AA957-0BB8-4342-8C02-088373DCC61B}|HelloWorld.vcxproj|C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\4\uC0C1_\uC785\uB825.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2B2AA957-0BB8-4342-8C02-088373DCC61B}|HelloWorld.vcxproj|solutionrelative:4\uC0C1_\uC785\uB825.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -51,25 +47,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "4\uAC15_\uC774\uC2A4\uCF00\uC774\uD504.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\4\uAC15_\uC774\uC2A4\uCF00\uC774\uD504.c",
-              "RelativeDocumentMoniker": "4\uAC15_\uC774\uC2A4\uCF00\uC774\uD504.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\4\uAC15_\uC774\uC2A4\uCF00\uC774\uD504.c",
-              "RelativeToolTip": "4\uAC15_\uC774\uC2A4\uCF00\uC774\uD504.c",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAB8AAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-06-13T08:30:48.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "4\uC0C1_\uC785\uB825.c",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\4\uC0C1_\uC785\uB825.c",
               "RelativeDocumentMoniker": "4\uC0C1_\uC785\uB825.c",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\4\uC0C1_\uC785\uB825.c",
               "RelativeToolTip": "4\uC0C1_\uC785\uB825.c",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACUAAAARAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACUAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-06-13T08:03:14.378Z",
               "EditorCaption": ""
