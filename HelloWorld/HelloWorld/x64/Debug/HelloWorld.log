@@ -1,2 +1,7 @@
-﻿  4상_입력.c
+﻿  lecture4.c
+C:\Users\Administrator\Desktop\CStudy_0610\HelloWorld\lecture4.c(46,6): warning C4101: 'num6' :참조되지 않은 지역 변수입니다.
+C:\Users\Administrator\Desktop\CStudy_0610\HelloWorld\lecture4.c(46,12): warning C4101: 'num7' :참조되지 않은 지역 변수입니다.
+C:\Users\Administrator\Desktop\CStudy_0610\HelloWorld\lecture4.c(44,6): warning C4101: 'num3' :참조되지 않은 지역 변수입니다.
+C:\Users\Administrator\Desktop\CStudy_0610\HelloWorld\lecture4.c(44,18): warning C4101: 'num5' :참조되지 않은 지역 변수입니다.
+C:\Users\Administrator\Desktop\CStudy_0610\HelloWorld\lecture4.c(44,12): warning C4101: 'num4' :참조되지 않은 지역 변수입니다.
   HelloWorld.vcxproj -> C:\Users\Administrator\Desktop\CStudy_0610\HelloWorld\x64\Debug\HelloWorld.exe
