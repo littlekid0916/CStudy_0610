@@ -1,3 +1,5 @@
-﻿  lecture6.c
-C:\Users\Administrator\Desktop\CStudy_0610\HelloWorld\lecture6.c(37,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+﻿  lecture7.c
+C:\Users\Administrator\Desktop\CStudy_0610\HelloWorld\lecture7.c(16,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+C:\Users\Administrator\Desktop\CStudy_0610\HelloWorld\lecture7.c(55,8): warning C4305: '=': 'int'에서 'char'(으)로 잘립니다.
+C:\Users\Administrator\Desktop\CStudy_0610\HelloWorld\lecture7.c(65,17): warning C4305: '초기화 중': 'int'에서 'char'(으)로 잘립니다.
   HelloWorld.vcxproj -> C:\Users\Administrator\Desktop\CStudy_0610\HelloWorld\x64\Debug\HelloWorld.exe
