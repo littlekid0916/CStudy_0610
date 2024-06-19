@@ -27,7 +27,7 @@ void lecture4() {
 		\\, \?, \", \' : 시스템 약속 상 기본을 출력할 수 없는 문자를 출력하게 해줌
 	*/
 
-	int num;
+	int num = 500;
 	printf("\"지금 보유한 금액 : %d원\"\n", num);
 	printf("\a");
 	printf("Hello\b\bhi\n");
