@@ -5,7 +5,7 @@
 */
 
 /*
-	자료형 : 어떤 데이터 타입을 사용할지 지정한 후 그 데이터의 크기를 지정한 키워드
+	자료형 : 저장되는 데이터의 종류에 따른 형태로 저장되는 값의 종류와 범위에 따라 다르게 표현
 
 	정수형
 	char : 1바이트(8비트) -128 ~ 127
@@ -21,32 +21,31 @@
 */
 
 /*
-	sizeof
-	
-*/
+	sizeof : 메모리 공간을 소모하는 크기를 byte 단위로 바꿔서 출력
 
-/*
-	unsigned : 부호가 필요 없다
-	unsigned char : 0 ~ 2e8
-	unsigned int : 0 ~ 2e32
+	unsigned : 양수만을 저장하여 두 배 넣은 범위의 값을 저장 
 */
 
 /*
 	상수(Constant) : 값이 고정되어 변경할 수 없는 메모리 공간
-	상수의 종류 : 이름을 갖는 상수(심볼릭), 이름을 갖지 않는 상수(literal)
+	상수의 종류 : 이름을 갖지 않는 리터럴 상수 (Literal), 이름을 갖는 심볼릭 상수(symbolic)
 	리터럴 상수에서 정수는 기본 자료형이 int이고 int보다 큰 수가 입력되면 자동으로 int 보다 큰 데이터 형을 선택
 	실수는 double
 
+	리터럴 상수
 	long -> 값L
 	unsigned -> UL
 	long long -> LL
 	usgined long long -> ULL
 	float -> F
 
-	심볼릭 상수 선언 방법
-	const 자료형 변수명 = 값;
-	const 선언과 동시에 초기화를 해야함, 변수명은 대문자로 작성
-	전처리기 사용
+	심볼릭 상수
+	const 사용
+	선언과 동시에 초기화를 해야함, 변수명은 대문자로 작성
+	예) const 자료형 변수명 = 값;
+
+	전처리기(#define) 사용
+	대문자로 작성
 */
 
 #include "lectures.h"
@@ -67,7 +66,13 @@ void lecture9() {
 	// sizeof(5); 등 어떤 데이터를 출력하는지 보기
 
 	// 직사각형의 넓이를 구하는 프로그램을 작성
-	// 좌표 2개를 지정 받아야함 (xpos1, ypos1)(xpos2, ypos2)
+	printf("첫번째 좌표 : \n");
+	int xpos1, ypos1;
+	scanf_s("%d %d", xpos1, ypos1);
+	printf("두번째 좌표 : \n");
+	int xpos2, ypos2;
+	scanf_s("%d %d", xpos2, ypos2);
+	printf("직사각형의 넓이 : %d", );
 	// xpos2가 xpos1보다 커야함
 	// xpos2 - xpos1 길이로 하는 직사각형을 구해야함
 	// (4,6)(6,8) 2*2=4

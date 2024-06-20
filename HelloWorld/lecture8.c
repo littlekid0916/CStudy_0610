@@ -119,15 +119,9 @@ void lecture8() {
 	// 8과 32가 반드시 코드에 들어가고 비트 연산자(<<, >>) 사용
 	printf("문제7\n");
 	char shiftNum = 64;
-	scanf_s("%d", &shiftNum);/*
-	shiftNum = shiftNum << 3 >> 5;*/
+	scanf_s("%d", &shiftNum);
+	// shiftNum = shiftNum << 3 >> 5;
 	shiftNum = shiftNum << 3;
 	shiftNum = shiftNum >> 5;
 	printf("8을 곱한 후 32로 나눈 값 : %d\n", shiftNum);
-
-	/*
-		양의 정수 범위 : 0b01111111 : 1 ~ 127
-		음의 정수 범위 : 0b10000000 : -128 ~ -1
-					: 0b11111111 : -1
-	*/
 }
