@@ -77,18 +77,21 @@ void lecture8() {
 
 
 	// 기호를 사용하지 않고 비트 연산 결과 출력
+	printf("문제1\n");
 	int d = 0b00001111;
 	int e = 0b00010010;
 	int my_int = 0b00000010;
 	int result = d & e;
 	printf("예상한 값 : %d, 실제 값 : %d\n", my_int, result);
 
+	printf("문제2\n");
 	d = 0b0001111;
 	e = 0b0010010;
 	my_int = 0b0011111;
 	result = d | e;
 	printf("예상한 값 : %d, 실제 값 : %d\n", my_int, result);
 
+	printf("문제3\n");
 	d = 0b0001111;
 	e = 0b0010010;
 	my_int = 0b0011101;
@@ -96,21 +99,35 @@ void lecture8() {
 	printf("예상한 값 : %d, 실제 값 : %d\n", my_int, result);
 
 	// 실제 값 예상하고 이유 생각해보기
+	printf("문제4\n");
 	char overFlowedValue = 0b01000000;
 	overFlowedValue << 2;
 	printf("%d\n", overFlowedValue);
 
+	printf("문제5\n");
 	overFlowedValue = 0b0000100;
 	overFlowedValue >> 5;
 	printf("%d\n", overFlowedValue);
 
 	// 10진수 하나를 입력 받고 ~연산자를 사용하여 해당 수의 2의 보수 값을 출력
+	printf("문제6\n");
 	int twoComplement;
 	scanf_s("%d", &twoComplement);
-	printf("2의 보수 값 : %d\n", ~twoComplement);
+	printf("2의 보수 값 : %d\n", ~twoComplement + 1);
 
 	// 10진수 하나를 입력 받고 해당 수에 8를 곱한 후 32로 나누는 코드를 *,/ 없이 작성
 	// 8과 32가 반드시 코드에 들어가고 비트 연산자(<<, >>) 사용
-	int shiftNum;
-	printf("8을 곱한 후 32로 나눈 값 : %d\n", );
+	printf("문제7\n");
+	char shiftNum = 64;
+	scanf_s("%d", &shiftNum);/*
+	shiftNum = shiftNum << 3 >> 5;*/
+	shiftNum = shiftNum << 3;
+	shiftNum = shiftNum >> 5;
+	printf("8을 곱한 후 32로 나눈 값 : %d\n", shiftNum);
+
+	/*
+		양의 정수 범위 : 0b01111111 : 1 ~ 127
+		음의 정수 범위 : 0b10000000 : -128 ~ -1
+					: 0b11111111 : -1
+	*/
 }

@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B2AA957-0BB8-4342-8C02-088373DCC61B}|HelloWorld.vcxproj|C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\lecture8.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2B2AA957-0BB8-4342-8C02-088373DCC61B}|HelloWorld.vcxproj|solutionrelative:lecture8.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B2AA957-0BB8-4342-8C02-088373DCC61B}|HelloWorld.vcxproj|C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\lecture7.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2B2AA957-0BB8-4342-8C02-088373DCC61B}|HelloWorld.vcxproj|solutionrelative:lecture7.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B2AA957-0BB8-4342-8C02-088373DCC61B}|HelloWorld.vcxproj|C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\lecture6.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2B2AA957-0BB8-4342-8C02-088373DCC61B}|HelloWorld.vcxproj|solutionrelative:lecture6.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2B2AA957-0BB8-4342-8C02-088373DCC61B}|HelloWorld.vcxproj|C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\lecture9.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2B2AA957-0BB8-4342-8C02-088373DCC61B}|HelloWorld.vcxproj|solutionrelative:lecture9.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,41 +46,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "lecture6.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\lecture6.c",
-              "RelativeDocumentMoniker": "lecture6.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\lecture6.c",
-              "RelativeToolTip": "lecture6.c",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-06-19T08:11:54.226Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "lecture7.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\lecture7.c",
-              "RelativeDocumentMoniker": "lecture7.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\lecture7.c",
-              "RelativeToolTip": "lecture7.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-06-19T08:18:03.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "lecture8.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\lecture8.c",
-              "RelativeDocumentMoniker": "lecture8.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\lecture8.c",
-              "RelativeToolTip": "lecture8.c",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAAAGgAAAAhAAAA",
+              "Title": "lecture9.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\lecture9.c",
+              "RelativeDocumentMoniker": "lecture9.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\lecture9.c",
+              "RelativeToolTip": "lecture9.c",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB8AAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-06-19T07:00:29.132Z",
+              "WhenOpened": "2024-06-20T07:29:42.882Z",
               "EditorCaption": ""
             }
           ]
