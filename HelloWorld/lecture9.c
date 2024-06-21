@@ -53,29 +53,38 @@
 void lecture9() {
 	
 	// sizeof 연산자를 사용해서 데이터형 출력
-	printf("char 데이터 크기 : %d\n", sizeof(char));
-	printf("short 데이터 크기 : %d\n", sizeof(short));
-	printf("int 데이터 크기 : %d\n", sizeof(int));
-	printf("long 데이터 크기 : %d\n", sizeof(long));
-	printf("long long 데이터 크기 : %d\n", sizeof(long long));
-	printf("float 데이터 크기 : %d\n", sizeof(float));
-	printf("double 데이터 크기 : %d\n", sizeof(double));
-	printf("long double 데이터 크기 : %d\n", sizeof(long double));
+	int sizeNum = sizeof(char);
+	printf("char 데이터 크기 : %d\n", sizeNum);
+	sizeNum = sizeof(short);
+	printf("short 데이터 크기 : %d\n", sizeNum);
+	sizeNum = sizeof(int);
+	printf("int 데이터 크기 : %d\n", sizeNum);
+	sizeNum = sizeof(long);
+	printf("long 데이터 크기 : %d\n", sizeNum);
+	sizeNum = sizeof(long long);
+	printf("long long 데이터 크기 : %d\n", sizeNum);
+	sizeNum = sizeof(float);
+	printf("float 데이터 크기 : %d\n", sizeNum);
+	sizeNum = sizeof(double);
+	printf("double 데이터 크기 : %d\n", sizeNum);
+	sizeNum = sizeof(long double);
+	printf("long double 데이터 크기 : %d\n", sizeNum);
 
-	// 리터럴 상수로 sizeof 연산자로 출력
-	// sizeof(5); 등 어떤 데이터를 출력하는지 보기
+	// 리터럴 상수를 sizeof 연산자로 출력
+	sizeNum = sizeof(10);
+	printf("정수형 리터럴 상수 크기 : %d\n", sizeNum);
+	sizeNum = sizeof(3.14);
+	printf("실수형 리터럴 상수 크기 : %d\n", sizeNum);
+	sizeNum = sizeof('A');
+	printf("문자형 리터럴 상수 크기 : %d\n", sizeNum);
 
 	// 직사각형의 넓이를 구하는 프로그램을 작성
+	int xpos1, ypos1, xpos2, ypos2;
 	printf("첫번째 좌표 : \n");
-	int xpos1, ypos1;
-	scanf_s("%d %d", xpos1, ypos1);
-	printf("두번째 좌표 : \n");
-	int xpos2, ypos2;
-	scanf_s("%d %d", xpos2, ypos2);
-	printf("직사각형의 넓이 : %d", );
-	// xpos2가 xpos1보다 커야함
-	// xpos2 - xpos1 길이로 하는 직사각형을 구해야함
-	// (4,6)(6,8) 2*2=4
-
+	scanf_s("%d %d", &xpos1, &ypos1);
+	printf("두번째 좌표 : \n*두번째 좌표는 첫번째 좌표보다 커야함\n");
+	scanf_s("%d %d", &xpos2, &ypos2);
+	int result = (xpos2 - xpos1) * (ypos2 - ypos1);
+	printf("직사각형의 넓이 : %d", result);
 
 }

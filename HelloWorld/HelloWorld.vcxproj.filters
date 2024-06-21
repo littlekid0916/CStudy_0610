@@ -18,7 +18,7 @@
     <ClCompile Include="newGame.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="메인.c">
+    <ClCompile Include="main.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="lecture1.c">
@@ -46,6 +46,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="lecture9.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture10.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
