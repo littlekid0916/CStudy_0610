@@ -12,10 +12,31 @@ int main(void) {
 
 	// 정수 또는 실수 데이터를 만들어서 컴퓨터가 생각하는 결과와 내가 생각하는 결과를 같이 출력
 	srand(time(NULL));
-	int computerVale = rand() % 100 + 1;
+
+	// int computerVale = rand() % 100 + 1;
+	int computerVale = rand() % 5;
 	int userValue;
+
 	scanf_s("%d", &userValue);
 	printf("컴퓨터 : %d 나 : %d\n", computerVale, userValue);
+	
+	if(userValue == computerVale) {
+		printf("축하합니다! 게임을 클리어했습니다!\n");
+	}
+	else if (userValue != computerVale) {
+		printf("틀렸습니다. 다시 시도해보세요.\n");
+		// int computerVale = rand() % 100 + 1;
+		computerVale = rand() % 5;
+		scanf_s("%d", &userValue);
+		printf("컴퓨터 : %d 나 : %d\n", computerVale, userValue);
+
+		if (userValue == computerVale) {
+			printf("축하합니다! 드디어 게임을 클리어했습니다!\n");
+		}
+		else if (userValue != computerVale) {
+			printf("또 틀렸습니다. NAGA\n");
+		}
+	}
 
 	return 0;
 }
