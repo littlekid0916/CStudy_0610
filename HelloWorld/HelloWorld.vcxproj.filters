@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\강의">
+      <UniqueIdentifier>{59da70c0-b301-4534-b552-394f6c5621d3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="newGame.c">
@@ -22,37 +25,40 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="lecture1.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\강의</Filter>
     </ClCompile>
     <ClCompile Include="lecture2.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\강의</Filter>
     </ClCompile>
     <ClCompile Include="lecture3.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\강의</Filter>
     </ClCompile>
     <ClCompile Include="lecture4.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\강의</Filter>
     </ClCompile>
     <ClCompile Include="lecture5.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\강의</Filter>
     </ClCompile>
     <ClCompile Include="lecture6.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\강의</Filter>
     </ClCompile>
     <ClCompile Include="lecture7.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\강의</Filter>
     </ClCompile>
     <ClCompile Include="lecture8.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\강의</Filter>
     </ClCompile>
     <ClCompile Include="lecture9.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\강의</Filter>
     </ClCompile>
     <ClCompile Include="lecture10.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\강의</Filter>
     </ClCompile>
     <ClCompile Include="lecture11.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\강의</Filter>
+    </ClCompile>
+    <ClCompile Include="lecture12.c">
+      <Filter>소스 파일\강의</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

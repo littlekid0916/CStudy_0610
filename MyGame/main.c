@@ -14,27 +14,29 @@ int main(void) {
 	srand(time(NULL));
 
 	// int computerVale = rand() % 100 + 1;
-	int computerVale = rand() % 5;
+	int computerVale;
 	int userValue;
 
-	scanf_s("%d", &userValue);
-	printf("컴퓨터 : %d 나 : %d\n", computerVale, userValue);
-	
-	if(userValue == computerVale) {
-		printf("축하합니다! 게임을 클리어했습니다!\n");
-	}
-	else if (userValue != computerVale) {
-		printf("틀렸습니다. 다시 시도해보세요.\n");
-		// int computerVale = rand() % 100 + 1;
-		computerVale = rand() % 5;
+	for (int i = 4; i >= 0; i--) {
+
+		computerVale = rand() % 5 + 1;
 		scanf_s("%d", &userValue);
 		printf("컴퓨터 : %d 나 : %d\n", computerVale, userValue);
 
 		if (userValue == computerVale) {
-			printf("축하합니다! 드디어 게임을 클리어했습니다!\n");
+			printf("축하합니다! 게임을 클리어했습니다!\n");
+			break;
 		}
 		else if (userValue != computerVale) {
-			printf("또 틀렸습니다. NAGA\n");
+			if (userValue > computerVale && i >= 1) {
+				printf("컴퓨터 보다 큽니다. 다시 시도해보세요. 남은 기회 : %d\n", i);
+			}
+			else if (userValue < computerVale && i >= 1) {
+				printf("컴퓨터 보다 작습니다. 다시 시도해보세요. 남은 기회 : %d\n", i);
+			}
+			else if (i == 0) {
+				printf("남은 기회를 전부 소진했습니다.\n");
+			}
 		}
 	}
 
