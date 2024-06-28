@@ -1,136 +1,139 @@
-/*
-	ÀÛ¼ºÀÚ : ·ùÈñ¿ø
-	ÀÛ¼ºÀÏ : 2024-06-26
-	ÇÐ½À³»¿ë : break, continue
+ï»¿/*
+	ìž‘ì„±ìž : ë¥˜í¬ì›
+	ìž‘ì„±ì¼ : 2024-06-26
+	í•™ìŠµë‚´ìš© : break, continue
 */
 
 /*
-*   for ¹Ýº¹¹®, while ¹Ýº¹¹®
-*   ¹Ýº¹ÀûÀÎ ³»¿ëÀ» °£°áÇÏ°Ô Ç¥Çö.
-*   break, continue.. (¹Ýº¹¹®, Á¶°Ç¹® - Á¦¾î¹®) Á¦¾îÇØÁÖ´Â ¹æ¹ý
-*   for, while, do while, switch »ç¿ëÀ» ÇÕ´Ï´Ù.
-*/
+	ë°˜ë³µë¬¸(iteration statements)
+	í”„ë¡œê·¸ëž¨ ë‚´ì—ì„œ ë˜‘ê°™ì€ ëª…ë ¹ì„ ì¼ì • íšŸìˆ˜ë§Œí¼ ë°˜ë³µí•˜ì—¬ ìˆ˜í–‰í•˜ë„ë¡ ì œì–´í•˜ëŠ” ëª…ë ¹ë¬¸
 
-/*
-*  break   : Á¦¾îÈå¸§¿¡¼­ ¹þ¾î³ª±â À§ÇØ »ç¿ëÇÕ´Ï´Ù. break ¼±¾ðµÇ¸é ÇØ´ç Á¦¾î¹®¿¡¼­ ºüÁ® ³ª¿É´Ï´Ù.
-* continue : Á¦¾îÈå¸§À» À¯ÁöÇÑ »óÅÂ·Î ÇØ´ç ÄÚµåÀÇ ½ÇÇà¸¸ °Ç³Ê ¶Ù´Â ±â´ÉÀ» ÇÕ´Ï´Ù.
+
+	while ë¬¸
+	íŠ¹ì • ì¡°ê±´ì„ ë§Œì¡±í•  ë•Œê¹Œì§€ ê³„ì†í•´ì„œ ì£¼ì–´ì§„ ëª…ë ¹ë¬¸ì„ ë°˜ë³µ ì‹¤í–‰
+
+	while (ì¡°ê±´ì‹) {
+		ì¡°ê±´ì‹ì˜ ê²°ê³¼ê°€ ì°¸ì¸ ë™ì•ˆ ë°˜ë³µì ìœ¼ë¡œ ì‹¤í–‰í•˜ê³ ìž í•˜ëŠ” ëª…ë ¹ë¬¸;
+	}
+
+
+	do / while ë¬¸
+	while ë¬¸ì€ ë£¨í”„ì— ì§„ìž…í•˜ê¸° ì „ì— ë¨¼ì € ì¡°ê±´ì‹ë¶€í„° ê²€ì‚¬
+	í•˜ì§€ë§Œ do / while ë¬¸ì€ ë¨¼ì € ë£¨í”„ë¥¼ í•œ ë²ˆ ì‹¤í–‰í•œ í›„ì— ì¡°ê±´ì‹ì„ ê²€ì‚¬
+
+	do {
+		ì¡°ê±´ì‹ì˜ ê²°ê³¼ê°€ ì°¸ì¸ ë™ì•ˆ ë°˜ë³µì ìœ¼ë¡œ ì‹¤í–‰í•˜ê³ ìž í•˜ëŠ” ëª…ë ¹ë¬¸;
+	} while (ì¡°ê±´ì‹);
+
+
+	for ë¬¸
+	while ë¬¸ê³¼ëŠ” ë‹¬ë¦¬ ìžì²´ì ìœ¼ë¡œ ì´ˆê¸°ì‹, ì¡°ê±´ì‹, ì¦ê°ì‹ì„ ëª¨ë‘ í¬í•¨í•˜ê³  ìžˆëŠ” ë°˜ë³µë¬¸
+	ë”°ë¼ì„œ while ë¬¸ë³´ë‹¤ëŠ” ì¢€ ë” ê°„ê²°í•˜ê²Œ ë°˜ë³µë¬¸ì„ í‘œí˜„
+
+	for (ì´ˆê¸°ì‹; ì¡°ê±´ì‹; ì¦ê°ì‹) {
+		ì¡°ê±´ì‹ì˜ ê²°ê³¼ê°€ ì°¸ì¸ ë™ì•ˆ ë°˜ë³µì ìœ¼ë¡œ ì‹¤í–‰í•˜ê³ ìž í•˜ëŠ” ëª…ë ¹ë¬¸;
+	}
+
 */
 
 #include "lectures.h"
 
-void lecture13()
-{
-	// printf 10¹ø ¹Ýº¹ÇÏ´Â ÄÚµå¸¦ for ¹Ýº¹¹®.
-	// 0¹ø ºÎÅÍ ~ Æ¯Á¤ ¼ýÀÚ±îÁö ¹Ýº¹ÇØ¼­ ¾Æ·¡ÀÇ ÄÚµå¸¦ ½ÇÇàÇÏ´Âµ¥,
-	// ³»°¡ ¿øÇÏ´Â ¸ñÇ¥°ª¿¡ µµ´ÞÇÏ¸é
-	for (int i = 0; i < 10; i++)
-	{
-		printf("Hi %d\n", i);
+void lecture13() {
 
-		if (i == 7)
-		{
-			printf("i°¡ 7ÀÏ ¶§ Ãâ·ÂµÊ\n");
+	// for ë°˜ë³µë¬¸
+	for (int i = 0; i < 10; i++) {
+
+		printf("Hi%d\n", i);
+
+		if (i == 7) {
+			printf("iê°€ 7ì¼ ë•Œ ì¶œë ¥ë¨\n");
 			break;
 		}
-
 	}
+
 	int index = 0;
-	for (; ;)  // ¹«ÇÑ ¹Ýº¹¹®. ctrl + c
-	{
+	for (; ;) {
+		// ë¬´í•œ ë°˜ë³µë¬¸
 		index++;
 		printf("hi %d\n", index);
-		if (index == 7)
-		{
-			printf("7ÀÌ Ãâ·ÂµÇ¾ú½À´Ï´Ù. \n");
+
+		if (index == 7) {
+			printf("7ì´ ì¶œë ¥ë˜ì—ˆìŠµë‹ˆë‹¤\n");
 			break;
 		}
 	}
 
-	// 
-	int targetNumber;  // ¿©·¯ºÐÀÌ Ãâ·ÂÇÏ°íÀÚ ÇÏ´Â ¸ñÇ¥ ¼ýÀÚ(scanf_s)
-	//int counter = 0;   // ¹Ýº¹¹®¿¡¼­ targetnumber¸¦ Ã£±â À§ÇÑ º¯¼ö	  
-	//scanf_s("%d", &targetNumber);
-	//
-	//for (; ;)
-	//{
-	//	counter++;
-	//	if (targetNumber == counter)
-	//	{
-	//		printf("¿øÇÏ´Â °á°ú °ªÀÌ Ãâ·ÂµÇ¾ú½À´Ï´Ù. %d\n", targetNumber);
-	//		break;
-	//	}
-	//}
+	int targetNumber;  // ì¶œë ¥í•˜ê³ ìž í•˜ëŠ” ëª©í‘œ ìˆ«ìž
+	int counter = 0;   // ë°˜ë³µë¬¸ì—ì„œ targetnumberë¥¼ ì°¾ê¸° ìœ„í•œ ë³€ìˆ˜	  
+	scanf_s("%d", &targetNumber);
+	
+	for (; ;) {
+		counter++;
+		if (targetNumber == counter) {
+			printf("ì›í•˜ëŠ” ê²°ê³¼ ê°’ì´ ì¶œë ¥ë˜ì—ˆìŠµë‹ˆë‹¤. %d\n", targetNumber);
+			break;
+		}
+	}
 
-	// while ¹Ýº¹¹®
+	// while ë°˜ë³µë¬¸
 	scanf_s("%d", &targetNumber);
 	int w_counter = 0;
-	//while (1) // ¹«ÇÑ ¹Ýº¹¹®
-	//{
-	//	w_counter++;
-	//	if (targetNumber == w_counter)
-	//	{
-	//		printf("¿øÇÏ´Â °á°ú °ªÀÌ Ãâ·ÂµÇ¾ú½À´Ï´Ù. %d\n", targetNumber);
-	//		break;
-	//	}
-	//	// for ¹Ýº¹¹®¿¡¼­ Å¸°Ù³Ñ¹ö¸¦ Ã£´Â ÄÚµå¿Í °°Àº ³»¿ëÀ» ±¸ÇöÇØº¸¼¼¿ä.
-	//	// break¸¦ »ç¿ëÀ» ÇÏ¼Å¾ß ÇÕ´Ï´Ù.
-	//}
 
-	// continue »ç¿ë ¿¹½Ã
+	while (1) {
+		// ë¬´í•œ ë°˜ë³µë¬¸
+		w_counter++;
+		if (targetNumber == w_counter) {
+			printf("ì›í•˜ëŠ” ê²°ê³¼ ê°’ì´ ì¶œë ¥ë˜ì—ˆìŠµë‹ˆë‹¤. %d\n", targetNumber);
+			break;
+		}
+	}
+
+	// continue ì‚¬ìš© ì˜ˆì‹œ
 	int w_num = 0;
-	while (w_num < 10)
-	{
+	while (w_num < 10) {
 		w_num++;
-		if (w_num % 2 == 0)
-		{
+		if (w_num % 2 == 0) {
 			continue;
 		}
 		printf("%d \n", w_num);
 	}
 
-	// ÁÖ»çÀ§¸¦ ±¼¸±°Å¿¡¿ä. ÁÖ»çÀ§¿¡´Â 12°³ÀÇ ¸éÀÌ ÀÖ½À´Ï´Ù. Scanf_s ¿©·¯ºÐÀÌ ÁÖ»çÀ§ÀÇ ´«À» Á¶ÀÛÇÏ¼¼¿ä. (¿Ï·á)
-	// ¸¸¾à¿¡ ÁÖ»çÀ§°¡ Â¦¼ö°¡ ³ª¿Â´Ù¸é, ÇöÀç ¿©·¯ºÐÀÌ °®°í ÀÖ´Â µ·¿¡ ¼ÒÁö±ÝÀÌ 2¹è°¡ µÇ°í,	  (ºÐ±â ±¸Çö ¿Ï·á)
-	// ¸¸¾à¿¡ È¦¼ö°¡ ³ª¿Â´Ù¸é, ¿©·¯ºÐÀÌ °®°í ÀÖ´Â ¼ÒÁö±ÝÀÌ 0¿øÀÌ µÇ´Â ÄÚµå¸¦ ÀÛ¼ºÇØº¸¼¼¿ä.  ( ¼ÒÁö±Ý ÄÚµå ±¸Çö)
-	// ¸¸¾à¿¡ ¼ÒÁö±ÝÀÌ 0¿øÀÌ µÈ´Ù¸é ÇÁ·Î±×·¥À» Á¾·áÇØÁÖ´Â ÇÁ·Î±×·¥À» ¸¸µé¾î º»´Ù.
 
-	printf("ÁÖ»çÀ§ ¿¹Á¦ ½ÃÀÛ \n");
+	// ì£¼ì‚¬ìœ„ê°€ ì§ìˆ˜ê°€ ë‚˜ì˜¨ë‹¤ë©´, í˜„ìž¬ ê°–ê³  ìžˆëŠ” ì†Œì§€ê¸ˆì´ 2ë°°ê°€ ë˜ê³ 
+	// í™€ìˆ˜ê°€ ë‚˜ì˜¨ë‹¤ë©´ í˜„ìž¬ ê°–ê³  ìžˆëŠ” ì†Œì§€ê¸ˆì´ 0ì›ì´ ë˜ëŠ” ì½”ë“œë¥¼ ìž‘ì„±
+	// ì†Œì§€ê¸ˆì´ 0ì›ì´ ëœë‹¤ë©´ í”„ë¡œê·¸ëž¨ì„ ì¢…ë£Œ
 
-	// 0 ~ 12¼ýÀÚ¸¦ scanf_s Ãâ·Â
-	printf("¿©·¯ºÐÀÌ Áö±Ý Å¸Â¥¿©¼­ ÁÖ»çÀ§ÀÇ ¼ýÀÚ¸¦ °ñ¶óÁÖ¼¼¿ä(0 ~ 12) : ");
+	printf("ì£¼ì‚¬ìœ„ ì˜ˆì œ ì‹œìž‘\n");
+	printf("ì£¼ì‚¬ìœ„ì˜ ìˆ«ìžë¥¼ ê³¨ë¼ì£¼ì„¸ìš”(0 ~ 12) : \n");
+
 	int diceNum, gameMoney;
-	// Áö±Ý ÄÚµåÀÇ ¹®Á¦Á¡ 12 º¸´Ù Å«¼ýÀÚ, 0º¸´Ù ÀÛÀº ¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¸é ±× ¼ýÀÚ°¡ diceNum¿¡ Ãâ·ÂÀÌ µË´Ï´Ù. ÀÌ°ÍÀ» ¼öÁ¤ÇÏ´Â ÄÚµå
 	scanf_s("%d", &diceNum);
-	gameMoney = 1000;  // ±âº» ¼ÒÁö±Ý 1000¿ø
+	gameMoney = 1000;  // ê¸°ë³¸ ì†Œì§€ê¸ˆ 1000ì›
 
-	while (1) // while Å»Ãâ Á¶°ÇÀ» 
-	{
-		if (diceNum < 1 || diceNum > 12)
-		{
-			printf("Àß¸øµÈ ÁÖ»çÀ§ÀÇ Å©±â¸¦ ÀÔ·ÂÇß½À´Ï´Ù. \n ÁÖ»çÀ§ Å©±â¸¦ ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä : \n");
+	while (1) {
+		if (diceNum < 1 || diceNum > 12) {
+			printf("ìž˜ëª»ëœ ì£¼ì‚¬ìœ„ì˜ í¬ê¸°ë¥¼ ìž…ë ¥í–ˆìŠµë‹ˆë‹¤. \nì£¼ì‚¬ìœ„ í¬ê¸°ë¥¼ ë‹¤ì‹œ ìž…ë ¥í•´ì£¼ì„¸ìš” : \n");
 			scanf_s("%d", &diceNum);
 		}
-		else
-		{
-			// Â¦¼öÀÎÁö È¦¼öÀÎÁö ÆÇº°ÇÏ´Â ÄÚµå¸¦ ÀÛ¼ºÇØ¾ß ÇÑ´Ù. 1 ~ 12
-			if (diceNum % 2 == 0)  // Â¦¼ö
-			{
+		else {
+			if (diceNum % 2 == 0) {
+				// ì§ìˆ˜
 				gameMoney = gameMoney * 2;
 
-				if (gameMoney > 5000) // °ÔÀÓ ½Â¸® Á¶°Ç 
-				{
-					printf("°ÔÀÓ¿¡¼­ ½Â¸®Çß½À´Ï´Ù. º¸À¯ ±Ý¾×Àº : %d ÀÔ´Ï´Ù.\n", gameMoney);
+				if (gameMoney > 5000) {
+					// ê²Œìž„ ìŠ¹ë¦¬ ì¡°ê±´
+					printf("ê²Œìž„ì—ì„œ ìŠ¹ë¦¬í–ˆìŠµë‹ˆë‹¤. ë³´ìœ  ê¸ˆì•¡ì€ %dìž…ë‹ˆë‹¤.\n", gameMoney);
 					break;
 				}
-				else
-				{
-					printf("ÇöÀç º¸À¯ ÁßÀÎ ±Ý¾× : %d \n", gameMoney);
+				else {
+					printf("í˜„ìž¬ ë³´ìœ  ì¤‘ì¸ ê¸ˆì•¡ : %d\n", gameMoney);
 					scanf_s("%d", &diceNum);
 				}
 			}
-			else // È¦¼ö
-			{
+			else {
+				// í™€ìˆ˜
 				gameMoney = 0;
-				printf("´ç½ÅÀº °ÔÀÓ¿¡¼­ Á³½À´Ï´Ù. º¸À¯ ±Ý¾×Àº : %d \n", gameMoney);
+				printf("ë‹¹ì‹ ì€ ê²Œìž„ì—ì„œ ì¡ŒìŠµë‹ˆë‹¤. ë³´ìœ  ê¸ˆì•¡ì€ %dìž…ë‹ˆë‹¤.\n", gameMoney);
 				break;
 			}
 		}
@@ -140,85 +143,70 @@ void lecture13()
 }
 
 
-
 /*
-*  if ~ else if ~ else ÄÚµå¸¦ Á¦¾îÇÏ´Â ¹æ¹ýÀ» ¹è¿ü½À´Ï´Ù.
-*
-*  ¶Ç´Ù¸¥ Á¶°Ç¹® Switch -  break;
-*
-*  Switch( º¯¼ö )
-*  {
-*	   case º¯¼öÀÇ °ª :
-*	   ½ÇÇàµÇ´Â ÄÚµå
-	   break;
-	   ...
-	   ...
-	   ...
-	   default :
-	   break;
-*  }
-*
-*  Çü½ÄÀÌ ±ÕÀÏÇÑ, Ã³¸®ÇØ¾ßÇÒ Á¶°ÇÀÌ ´Ù¾çÇÒ ¶§ »ç¿ëÇÏ´Â Á¶°Ç¹® ÀÔ´Ï´Ù.
+	switch ë¬¸
+	í˜•ì‹ì´ ê· ì¼í•œ, ì²˜ë¦¬í•´ì•¼í•  ì¡°ê±´ì´ ë‹¤ì–‘í•  ë•Œ ì‚¬ìš©í•˜ëŠ” ì¡°ê±´ë¬¸
+	float, dobule ì‹¤ìˆ˜í˜• ë°ì´í„° íƒ€ìž…ì˜ ê°’ì„ ë„£ìœ¼ë©´ ì—ëŸ¬ ë°œìƒ
+
+	switch(ë³€ìˆ˜) {
+Â Â Â 		case ë³€ìˆ˜ê°’:
+Â Â Â Â Â Â Â   ì‹¤í–‰ë‚´ìš©
+Â Â Â Â Â Â Â  break;
+Â 		default:
+Â Â Â Â Â Â Â   ì‹¤í–‰ë‚´ìš©
+	}
+
 */
 
-void lecture13_2()
-{
+void lecture13_2() {
+
 	int num;
 	scanf_s("%d", &num);
 
-	// ¾Æ·¡ switch¹®À» if ~ else if ~ else·Î ¹Ù²Ù¾î º¸¼¼¿ä
-	switch (num)
-	{
+	switch (num) {
 	case 0:
-		printf("numÀº 0ÀÔ´Ï´Ù.\n");
+		printf("numì€ 0ìž…ë‹ˆë‹¤.\n");
 		break;
 	case 1:
-		printf("numÀº 1ÀÔ´Ï´Ù.\n");
+		printf("numì€ 1ìž…ë‹ˆë‹¤.\n");
 		break;
 	case 2:
-		printf("numÀº 2ÀÔ´Ï´Ù.\n");
+		printf("numì€ 2ìž…ë‹ˆë‹¤.\n");
 		break;
 	default:
-		printf("numÀº 0 ~ 2 ÀÌ¿ÜÀÇ °ªÀÔ´Ï´Ù.\n");
+		printf("numì€ 0 ~ 2 ì´ì™¸ì˜ ê°’ìž…ë‹ˆë‹¤.\n");
 		break;
 	}
 
-	//if(num == 0)
-	//    printf("numÀº 0ÀÔ´Ï´Ù.\n");
-	//else if(num == 1)
-	//    printf("numÀº 1ÀÔ´Ï´Ù.\n");
-	//else if(num == 2)
-	//    printf("numÀº 2ÀÔ´Ï´Ù.\n");
-	//else
-	//    printf("numÀº 0 ~ 2 ÀÌ¿ÜÀÇ °ªÀÔ´Ï´Ù.\n");
+	if(num == 0)
+	    printf("numì€ 0ìž…ë‹ˆë‹¤.\n");
+	else if(num == 1)
+	    printf("numì€ 1ìž…ë‹ˆë‹¤.\n");
+	else if(num == 2)
+	    printf("numì€ 2ìž…ë‹ˆë‹¤.\n");
+	else
+	    printf("numì€ 0 ~ 2 ì´ì™¸ì˜ ê°’ìž…ë‹ˆë‹¤.\n");
 
-	// swtich¹®ÀÇ ±âº» »ç¿ë¹ý¿¡ ´ëÇØ ÇÐ½ÀÇÏ¿´½À´Ï´Ù.
-	// break°¡ ¾øÀ¸¸é ¾î¶»°Ô µÉ±î¿ä?
 
-	switch (num)
-	{
+	// breakê°€ ì—†ìœ¼ë©´ ì–´ë–»ê²Œ ë ê¹Œ?
+	switch (num) {
 	case 0:
 	case 1:
-		printf("0,1ÀÇ °ªÀÌ ³ª¿Ã È®·ü : \n");
+		printf("0, 1ì˜ ê°’ì´ ë‚˜ì˜¬ í™•ë¥ \n");
 		break;
 	case 2:
 	case 3:
 	case 4:
-		printf("2,3,4ÀÇ °ªÀÌ ³ª¿Ã È®·ü : \n");
+		printf("2, 3, 4ì˜ ê°’ì´ ë‚˜ì˜¬ í™•ë¥ \n");
 
 	default:
-		printf("numÀº 0 ~ 2 ÀÌ¿ÜÀÇ °ªÀÔ´Ï´Ù.\n");
+		printf("numì€ 0 ~ 2 ì´ì™¸ì˜ ê°’ìž…ë‹ˆë‹¤.\n");
 	}
 
 
-	// switch( )   // int Á¤¼ö¸¦ ÀÔ·ÂÇß½À´Ï´Ù.
-	// ( ) ¾È¿¡ ¿Ã ¼ö ÀÖ´Â µ¥ÀÌÅÍ Å¸ÀÔÀº Á¤¼öÇü!
-	// float, dobule ½Ç¼öÇü µ¥ÀÌÅÍ Å¸ÀÔÀÇ °ªÀ» ³ÖÀ¸¸é ¿¡·¯°¡ ¹ß»ýÇÕ´Ï´Ù.
-
 	char d_num = 1;
 
-	switch (d_num)     // case :  case¿Í :(ÄÝ·Ð) »çÀÌ¿¡ µé¾î°¡´Â °ªÀº. Á¤¼ö°¡ ¾Æ´Ï°í,  Á¤¼öÀÇ °ªÀ¸·Î ¹ÝÈ¯µÇ´Â ½ÄÀÌ¿©µµ »ó°üÀÌ ¾ø´Ù.  
-		// °¡´ÉÀº ÇÏÁö¸¸, switch ~ case¹®À» »ç¿ëÇÏ´Â ÀÌÀ¯´Â °¡µ¶¼ºÀ» »ç¿ëÀ» ÇÕ´Ï´Ù.
+	switch (d_num)    
 	{
 	case 'W':
 		break;
@@ -229,4 +217,5 @@ void lecture13_2()
 	case 'S':
 		break;
 	}
+
 }
