@@ -1,3 +1,6 @@
-﻿  main.c
-C:\Users\Administrator\Desktop\CStudy_0610\MyGame\main.c(14,8): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  countNumFunc.c
+  main.c
+C:\Users\Administrator\Desktop\CStudy_0610\MyGame\main.c(47,8): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
+C:\Users\Administrator\Desktop\CStudy_0610\MyGame\countNumFunc.c(21,1): warning C4716: 'setPlayerHP': 값을 반환해야 합니다.
   MyGame.vcxproj -> C:\Users\Administrator\Desktop\CStudy_0610\HelloWorld\x64\Debug\MyGame.exe

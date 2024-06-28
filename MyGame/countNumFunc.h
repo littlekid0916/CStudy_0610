@@ -1,6 +1,8 @@
 #pragma once
 
-void startNumberSetting();
+int inputNumber();
+
+void startGameSetting();
 
 int setPlayerHP();
 
