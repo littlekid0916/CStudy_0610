@@ -4,16 +4,12 @@
 
 int main(void) {
 
-	// printf 함수와 scanf 함수를 이용하여 게임 만들기
-
 	// 플레이어를 환영하는 텍스트 출력
 	printf("◈ 안녕하세요 환영합니다 ◈\n");
-	printf("숫자를 입력하면 게임이 시작됩니다.\n");
+	printf("숫자를 입력하면 게임이 바로 시작됩니다.\n");
 
-	// 정수 또는 실수 데이터를 만들어서 컴퓨터가 생각하는 결과와 내가 생각하는 결과를 같이 출력
 	srand(time(NULL));
 
-	// int computerVale = rand() % 100 + 1;
 	int computerVale;
 	int userValue;
 
@@ -39,6 +35,48 @@ int main(void) {
 			}
 		}
 	}
+
+
+
+	//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+	srand(time(NULL));
+
+	int computerValue = rand() % 100 + 1;
+	int userValue;
+	int playerHP = 5;
+
+	printf("★☆ 환영합니다. ☆★\n");
+	printf("숫자를 입력하면 게임이 시작합니다.\n");
+	printf("게임 시작!\n");
+	printf("플레이어의 값을 입력해주세요.\n");
+	scanf_s("%d", &userValue);
+	printf("컴퓨터의 값은 %d 입니다.\n", computerValue);
+	printf("플레이어의 값은 %d 입니다.\n", userValue);
+
+	while (1) {
+		if (computerValue == userValue) {
+			// 함수화_1 : GameWin() 게임에서 승리를 구현하는 함수를 만들어보세요.
+			gameWin();
+			break;
+		}
+		else {
+			// 만약 플레이어의 현재 체력이 0보다 작거나 같으면 게임을 종료시켜라.
+			if (playerHP <= 0) {
+				printf("게임 종료\n");
+				break;
+			}
+
+			// 함수화_2 : 플레이어의 체력을 감소 시키고 숫자를 다시 맞출 기회를 주는 코드를 함수화 시켜 볼겁니다.
+
+			// 플레이어의 체력을 감소시킨다.
+			playerHP--;
+			// 다시 플레이어가 숫자를 맞출 기회를 준다.
+			printf("플레이어의 값을 입력해주세요.\n");
+			scanf_s("%d", &userValue);
+		}
+	}
+
 
 	return 0;
 }

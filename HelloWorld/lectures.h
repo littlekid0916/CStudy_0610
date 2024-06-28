@@ -23,4 +23,6 @@ void lecture12_2();
 /// 강의12. 반복문 while
 /// </summary>
 void lecture12_3();
+void lecture13();
+void lecture13_2();
 void lecture14();

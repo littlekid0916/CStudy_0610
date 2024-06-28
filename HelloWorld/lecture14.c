@@ -24,7 +24,7 @@
 //	1. 반환값이 있고 매개변수도 있는 함수
 int addTwoNumber(int a, int b) {
 	int result = a + b;
-	printf("result의 값 : %d\n", result);
+	printf("a의 값 : %d\n", a);
 	return result;
 }
 
@@ -48,7 +48,6 @@ void showResult(void) {
 
 // 두 수를 비교해서 큰 수를 리턴하는 함수 만들기
 int compare(int a, int b) {
-	printf("문제1\n");
 	if (a > b) {
 		return a;
 	}
@@ -58,13 +57,14 @@ int compare(int a, int b) {
 }
 
 // 수 하나를 받아서 그 수의 절대값을 리턴하는 함수 만들기
-int compare1(int a) {
-	printf("문제2\n");
-	if (a > 0) {
-		return a;
+int absoluteNum(int num) {
+	if (num < 0) {
+		// 음수
+		return num * (-1);
 	}
-	else if (a < 0) {
-		return a * (-1);
+	else {
+		// 양수
+		return num;
 	}
 }
 
@@ -76,22 +76,23 @@ void lecture14() {
 
 	// 함수 호출 방법
 	// 함수이름();
-	int a;
-	a = addTwoNumber(1, 2);
+	int a = 5 + 7;
 	printf("a의 값 : %d\n", a);
-
-	addTwoNumber(3, 4);
-
-	changeResult(a);
+	a = addTwoNumber(5, 7);
+	printf("a의 값 : %d\n", a);
 
 	showResult();
 
-	int c = inputNumber();
-	printf("%d의 값이 출력되었습니다\n", c);
+	changeResult(addTwoNumber(5, 7));
 
-	int d = compare(3, 9);
-	printf("%d\n", d);
-	int e = compare1(8);
-	printf("%d\n", e);
+	int c = inputNumber();
+	printf("%d 값이 출력되었습니다.\n", c);
+
+	int firstNum, secondNum;
+	firstNum = inputNumber();
+	secondNum = inputNumber();
+
+	int compareAbsValue = compare(absoluteNum(firstNum), absoluteNum(secondNum));
+	printf("두 수를 절대값으로 변환한 값 중 큰 값 : %d", compareAbsValue);
 
 }
