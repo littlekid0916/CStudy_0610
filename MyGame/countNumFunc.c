@@ -4,10 +4,9 @@
 
 // 함수 이름 변경 방법 : ctrl + R + R
 
-int inputNumber(int userValue) {
+int inputNumber() {
 	int returnValue;
 	scanf_s("%d", &returnValue);
-	return userValue;
 }
 
 void startGameSetting() {
@@ -17,7 +16,7 @@ void startGameSetting() {
 
 int setPlayerHP() {
 	printf("플레이어의 체력을 설정해주세요\n");
-	int playerHP = 5;
+	int inputNumber();
 }
 
 void gameWin() {

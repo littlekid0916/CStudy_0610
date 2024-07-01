@@ -48,7 +48,7 @@ int main(void) {
 
 	int computerValue = rand() % 5 + 1;
 	int userValue;
-	int playerHP = 5;
+	int playerHP = setPlayerHP();
 	
 	startGameSetting();
 	printf("게임 시작!\n");
@@ -78,7 +78,7 @@ int main(void) {
 			playerHP--;
 			// 다시 플레이어가 숫자를 맞출 기회를 준다.
 			printf("플레이어의 값을 입력해주세요.\n");
-			inputNumber();
+			userValue = inputNumber();
 		}
 	}
 
